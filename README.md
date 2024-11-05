@@ -33,4 +33,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Romanchuk Yuriy
 - Maksim Yakhimovich
 - Terzi Artem
+<<<<<<< HEAD
 - 
+=======
+- Blyndaruk Dmytro
+- Omelchyshyn Oleh
+>>>>>>> bfeb16425a5c26497babcd838ab124fa85a8512e
