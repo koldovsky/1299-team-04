@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,48 +12,43 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <main>
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.section-hero.partial.html"
-        ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-hero.partial.html">
+        </section>
 
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.section-best-selling-products.partial.html"
-        ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+            data-hx-get="index.section-best-selling-products.partial.html"></section>
 
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.section-our-fave-finds.partial.html"
-        ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+            data-hx-get="index.section-best-selling-products.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+            data-hx-get="index.section-our-fave-finds.partial.html"></section>
 
         <!--Omelchyshyn-->
-        <section 
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.testimonials-carousel.partial.html"
-        ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.testimonials-carousel.partial.html">
+        </section>
 
         <!--Omelchyshyn-->
-        <section 
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.about-us-accordion.partial.html"
-        ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-us-accordion.partial.html">
+        </section>
 
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.contacts-form.partial.html"
-        ></section>
+        <!--Yakhimovich-->
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-blog.partial.html">
+        </section>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.next-day-delivery.partial.html">
+        </div>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contacts-form.partial.html">
+        </section>
 
     </main>
 </body>
+
 </html>
