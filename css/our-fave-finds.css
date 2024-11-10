@@ -1,0 +1,13 @@
+.our-finds__products {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0%;
+}
+
+.our-finds__product-image {
+    width: 100%
+    max-width: 370px;
+}
