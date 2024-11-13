@@ -1,0 +1,56 @@
+.our-blog {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.our-blog h2 {
+    font-size: 2.125rem;
+}
+.our-blog p {
+    font-size: 1rem;
+}
+.our-blog__main-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    
+}
+.blog-part {
+    color: var(--text);
+    text-decoration: none;
+}
+.main-posts__not-to-use-pink,
+.main-posts__new-brands,
+.main-posts__trending-colors {
+    width: 100%;
+    min-width: 280px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+.main-posts__not-to-use-pink img,
+.main-posts__new-brands img,
+.main-posts__trending-colors img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+    .our-blog {
+        width: 80%;
+    }
+    .our-blog__main-posts {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-posts__not-to-use-pink,
+    .main-posts__new-brands,
+    .main-posts__trending-colors {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
