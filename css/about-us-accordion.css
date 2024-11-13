@@ -1,0 +1,38 @@
+.accordion {
+    height: 845px;
+    width: 320px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    position: relative; 
+}
+.accordion__content-block {
+    height: 473px;
+    width: 302px;
+    padding-left: 15px;  
+    padding-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+.title {
+    font-size: 14px;
+    color: #757171;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+.subtitle {
+    font-size: 24px;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-weight: 400;
+}
