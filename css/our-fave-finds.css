@@ -8,9 +8,6 @@
   margin-top: 25px;
   font-size: 18px;
 }
-.our-finds__carousel-nav {
-  margin-top: 50px;
-}
 .our-finds__products {
   display: grid;
   text-align: center;
@@ -43,4 +40,20 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 10.8px;
+}
+.our-finds__carousel-nav {
+  display: inline-flex;
+  position: relative;
+  min-width: 100%;
+  margin-top: 50px;
+  max-height: 58.08px;
+  cursor: pointer;
+ }
+.our-finds__carousel-place {
+  display: flexbox;
+  flex-direction: row;
+  padding: 15px 20px 15px 20px;
+}
+.our-finds__carousel-button {
+  display: flexbox;
 }
