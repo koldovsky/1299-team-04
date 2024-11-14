@@ -4,6 +4,7 @@
     padding-top: 90px;
     padding-bottom: 50px;
     position: relative; 
+    display: flex;
 }
 .accordion__content-block {
     height: 473px;
@@ -35,4 +36,11 @@
     margin-right: 0px;
     margin-top: 0px;
     font-weight: 400;
+}
+.about-us-accordion__image {
+    width: 322px;
+    height: 657px;
+    
+    
+     
 }
