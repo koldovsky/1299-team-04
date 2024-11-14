@@ -32,6 +32,7 @@
   display: flexbox;
   flex-direction: row;
   padding: 15px 20px 15px 20px;
+  margin-bottom: 30px;
 }
 .our-finds__carousel-button {
   color: var(--gray);
@@ -39,13 +40,25 @@
 }
 .our-finds__carousel-button:hover {
   display: inline-block;
-  color:var(--text);
+  color: var(--text);
   border-bottom: 2px solid var(--accent);
 }
 .our-finds__products {
   display: grid;
+  text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 991px) {
+  .our-finds__products {
+    grid-template-columns: 1fr 1fr;
   }
+}
+@media (max-width: 479px) {
+  .our-finds__products {
+    grid-template-columns: 1fr;
+  }
+}
+
 .our-finds__product-card {
   width: 270px;
   padding: 0px 15px 0px 15px;
@@ -75,20 +88,20 @@ img {
   color: var(--accent);
 }
 .order-button {
-  display: inline-block;                
-  padding: 10px 20px;                 
-  color: var(--gray);                      
-  background-color: transparent;       
-  border: 2px solid var(--accent);           
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--gray);
+  background-color: transparent;
+  border: 2px solid var(--accent);
   border-radius: 5px;
-  font-size: 10.8px;                  
-  font-weight: bold;                    
+  font-size: 10.8px;
+  font-weight: bold;
   text-align: center;
-  text-transform: uppercase;                  
-  cursor: pointer;                     
-  transition: background-color 0.3s, color 0.3s; 
-  }
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 .order-button:hover {
-  background-color: var(--accent);           
+  background-color: var(--accent);
   color: var(--text-white);
 }
