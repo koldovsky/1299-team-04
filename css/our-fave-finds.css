@@ -1,3 +1,16 @@
+.banners {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+  padding-top: 100px;
+}
+.banner-img {
+  width: 570px;
+  padding-inline: 15px;
+}
 .our-finds__section {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -20,7 +33,7 @@
   display: block;
   text-align: left;
   font-size: 38px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .our-finds__subtitle {
   margin-top: 25px;
@@ -58,7 +71,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+}
 @media (max-width: 991px) {
   .our-finds__products {
     grid-template-columns: 1fr 1fr;
@@ -77,10 +90,9 @@
   text-align: center;
 }
 img {
-  width: 270px; 
+  width: 270px;
   height: 100%;
   object-fit: cover;
-  
 }
 .our-finds__name-div {
   margin-top: 24px;
