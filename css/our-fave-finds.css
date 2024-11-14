@@ -29,7 +29,7 @@
 .our-finds__carousel-nav {
   display: flex;
   width: 100%;
-  max-width: 1082px;
+  max-width: 1170px;
   margin: 0 auto;
   margin-top: 50px;
   max-height: 58.08px;
@@ -45,6 +45,7 @@
 .our-finds__carousel-button {
   color: var(--gray);
   display: flexbox;
+  text-align: left;
 }
 .our-finds__carousel-button:hover {
   display: inline-block;
@@ -52,10 +53,10 @@
   border-bottom: 2px solid var(--accent);
 }
 .our-finds__products {
-  max-width: 1200px;
+  max-width: 1170px;
+  padding-inline: -15px;
   margin: 0 auto;
   display: grid;
-  gap: 1px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 @media (max-width: 991px) {
@@ -68,16 +69,18 @@
     grid-template-columns: 1fr;
   }
 }
-
 .our-finds__product-card {
   width: 100%;
+  max-width: 270px;
+  padding-inline: 15px;
   margin: 0 auto;
   text-align: center;
 }
 img {
-  width: 270px;
+  width: 270px; 
   height: 100%;
   object-fit: cover;
+  
 }
 .our-finds__name-div {
   margin-top: 24px;
