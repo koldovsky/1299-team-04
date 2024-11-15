@@ -41,7 +41,7 @@
 }
 /*.our-finds__container {
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .our-finds__container-narrow {
   margin: 0px 74px 0px 74px;
@@ -80,7 +80,7 @@
   margin-bottom: 30px;
 }
 .our-finds__carousel-button {
-  color: var(--gray);
+  color: var(--gray-color1);
   display: flexbox;
   text-align: left;
 }
@@ -142,7 +142,7 @@ img {
 .order-button {
   display: inline-block;
   padding: 10px 20px;
-  color: var(--gray);
+  color: var(--gray-color1);
   background-color: transparent;
   border: 2px solid var(--accent);
   border-radius: 5px;
