@@ -56,7 +56,7 @@
 }
 
 .hero__action:hover {
-  background-color: var(--dark-gray);
+  background-color: var(--gray-color3);
 }
 
 .hero__action svg {
