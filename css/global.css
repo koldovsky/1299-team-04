@@ -10,11 +10,12 @@
   --gray: #757171;
   --dark-gray: #333333;
   --light-gray: #A9A9A9;
+  --font-primary: 'Poppins';
   --font-secondary: 'Hind';
 }
 
 body {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary), Helvetica, Arial, sans-serif;
   color: var(--text);
 }
 

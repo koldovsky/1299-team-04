@@ -1,21 +1,31 @@
 .hero {
-  padding-top: 260px;
-  padding-bottom: 290px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-image: url('../img/home/hero.webp');
   background-size: cover;
   background-position: 50% 79.69%;
   background-repeat: no-repeat;
+
+  @media only screen and (min-width: 1023px) {
+    padding-top: 260px;
+    padding-bottom: 290px;
+  }
 }
 
 .hero__content {
-  padding: 0 15px;
+  @media only screen and (min-width: 1023px) {
+    padding: 0 15px;
+  }
 }
 
 .hero__title {
   margin: 0;
   line-height: 1.1;
-  font-size: 84px;
+  font-size: 58px;
   color: var(--text);
+  @media only screen and (min-width: 1023px) {
+    font-size: 84px;
+  }
 }
 
 .hero__title span {
