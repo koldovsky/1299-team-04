@@ -64,7 +64,7 @@
   margin-top: 50px;
   max-height: 58.08px;
   cursor: pointer;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--gray-color2);
 }
 .our-finds__carousel-place {
   display: flexbox;
