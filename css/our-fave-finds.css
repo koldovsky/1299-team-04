@@ -6,10 +6,34 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 100px;
 }
-.banner-img {
+@media (max-width: 479px) {
+  .banners {
+    grid-template-columns: 1fr;
+  }
+}
+.banner__left {
+  display: block;
+  box-sizing: border-box;
+  max-width: 570px;
+  padding: 15px;
+}
+.banner__right {
+  display: block;
+  box-sizing: border-box;
+  max-width: 570px;
+  padding: 15px;
+}
+.background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+.banner__img {                /* Видалити потім */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .our-finds__section {
   padding-top: 40px;
@@ -17,7 +41,7 @@
 }
 /*.our-finds__container {
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .our-finds__container-narrow {
   margin: 0px 74px 0px 74px;
@@ -47,7 +71,7 @@
   margin-top: 50px;
   max-height: 58.08px;
   cursor: pointer;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--gray-color2);
 }
 .our-finds__carousel-place {
   display: flexbox;
@@ -56,7 +80,7 @@
   margin-bottom: 30px;
 }
 .our-finds__carousel-button {
-  color: var(--gray);
+  color: var(--gray-color1);
   display: flexbox;
   text-align: left;
 }
@@ -118,7 +142,7 @@ img {
 .order-button {
   display: inline-block;
   padding: 10px 20px;
-  color: var(--gray);
+  color: var(--gray-color1);
   background-color: transparent;
   border: 2px solid var(--accent);
   border-radius: 5px;

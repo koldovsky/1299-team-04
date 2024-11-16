@@ -7,14 +7,18 @@
   --accent: #7BB67C;
   --text: #333333;
   --text-white: #FFFFFF;
-  --gray: #757171;
-  --dark-gray: #333333;
-  --light-gray: #A9A9A9;
+  --gray-color1: #757171;             /*previously was named (gray) */
+  --gray-color2: #A9A9A9;             /*previously was named (light-gray) */
+  --gray-color3: #333333;               /*previously was named (dark-gray) */
+  --gray-color4: #2C2C2C;
+  --gray-color5: #707070;
+  --font-primary: 'Poppins';
   --font-secondary: 'Hind';
+  --scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary), Helvetica, Arial, sans-serif;
   color: var(--text);
 }
 
