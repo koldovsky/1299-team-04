@@ -18,7 +18,7 @@
   --gray-color5: #707070;
   --font-primary: 'Poppins';
   --font-secondary: 'Hind';
-  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,4 +31,26 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
