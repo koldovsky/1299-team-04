@@ -1,0 +1,54 @@
+.about-us-accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px 0 50px 0;
+  gap: 32px;
+}
+.about-us-accordion__inner {
+  flex: 1;
+  max-width: 600px;
+  padding: 0 16px;
+}
+.about-us-accordion__title {
+  font-weight: 500;
+  color: #757171;
+  text-align: left;
+  font-size: 14px;
+}
+.about-us-accordion__subtitle {
+  font-weight: 600;
+  color: #333333;
+  text-align: left;
+  font-size: 24px;
+  margin: 0px ;
+  width: 199.51px;
+  height: 120.8px;
+}
+.about-us-accordion__item {
+  width: 100%; /* Адаптивна ширина */
+  max-width: 214px;
+  padding: 20px 0;
+}
+
+.about-us-accordion__header {
+  font-size: 18px;
+  font-family: var(--font-primary);
+  color: #333333;
+  text-align: left;
+}
+
+.accordion-button.collapsed::after {
+  content: '▼'; /* Правильний селектор */
+  font-size: 14px;
+  margin-left: 8px; /* Додати відступ для іконки */
+}
+
+.about-us-accordion__body.accordion-body {
+  max-width: 201px;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  color: #858585;
+  text-align: left;
+}
