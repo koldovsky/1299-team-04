@@ -21,6 +21,8 @@
   counter-reset: #333333;
   font-family: Poppins, sans-serif;
   text-align: center;
+  display: block;
+  font-weight: 600;
 }
 .subtitle {
   font-size: 18px;
