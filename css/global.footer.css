@@ -77,6 +77,24 @@ a {
 .footer__menu-item {
     margin: 10px 5px;
     font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__menu-item:first-child{
+    @media only screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.footer__menu-link{
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__menu-link:hover,
+.footer__menu-link:focus{
+    @media only screen and (min-width: 768px) {
+        color: var(--accent);
+    }
 }
 
 .footer__social{
@@ -107,6 +125,15 @@ a {
     height: 30px;
     background-color: var(--text-white);
     border-radius: 8px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__social-link:hover, 
+.footer__social-link:focus{
+    @media only screen and (min-width: 768px) {
+        background-color: var(--accent);
+    }
 }
 
 .footer__social-svg{
@@ -166,9 +193,15 @@ a {
     color: var(--text-white);
     background-color: var(--accent);
     border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
+.footer__button:hover,
+.footer__bottom:focus{
     @media only screen and (min-width: 768px) {
-        
+        background-color: var(--text-white);
+        color: var(--accent);
     }
 }
 
