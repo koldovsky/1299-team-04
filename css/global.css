@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: var(--font-primary), Helvetica, Arial, Poppins, sans-serif;
+  font-family: var(--font-primary), Helvetica, Arial, system-ui, -apple-system, sans-serif;
   color: var(--text);
   scroll-behavior: smooth;
 }
