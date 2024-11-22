@@ -1,4 +1,4 @@
-.banners {
+/* .banners {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -29,24 +29,24 @@
   object-fit: cover;
   object-position: center;
 }
-.banner__img {                /* Видалити потім */
+.banner__img {           
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
+} */
 .our-finds__section {
   padding-top: 40px;
   padding-bottom: 50px;
 }
-/*.our-finds__container {
+.our-finds__container {
   width: 100%;
   margin: 0 auto;
 }
 .our-finds__container-narrow {
   margin: 0px 74px 0px 74px;
   padding: 0px 15px 0px 15px;
-} */
+}
 .our-finds__header {
   text-align: left;
   max-width: 1200px;
@@ -92,9 +92,9 @@
 .our-finds__products {
   width: 100%;
   height: 100%;
-  max-width: 270px;
+  max-width: 1170px;
+  max-height: ;
   justify-content: center;
-  /* padding-inline: -15px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
