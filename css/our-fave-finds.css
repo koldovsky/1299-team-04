@@ -71,15 +71,14 @@
   margin-top: 50px;
   max-height: 58.08px;
   cursor: pointer;
-  }
+}
 .our-finds__carousel-place {
   display: flexbox;
   flex-direction: row;
- }
+}
 .our-finds__carousel-button {
   color: var(--gray-color1);
   background: transparent;
-  /* display: flexbox; */
   text-align: left;
   cursor: pointer;
   border: none;
@@ -91,7 +90,7 @@
   border-bottom: 2px solid var(--accent);
 }
 .our-finds__bottom-line {
-  border-bottom: 1px solid var(--gray-color2);  
+  border-bottom: 1px solid var(--gray-color2);
   max-width: 1170px;
   height: 1px;
   margin: 0 auto;
