@@ -1,5 +1,6 @@
 function init() {
   import('./index.section-our-fave-finds.js');
+  import('./index.section-partners.js');
 }
 
 const totalPartials = document.querySelectorAll(
