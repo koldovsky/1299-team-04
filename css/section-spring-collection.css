@@ -1,0 +1,65 @@
+.spring-collection{
+    padding: 100px 0;
+    background-image: url('../img/section-spring-collection/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media only screen and (min-width: 992px) {
+        padding: 170px 25px 180px;
+    }
+}
+
+.spring-collection__content {
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.spring-collection__title {
+    margin: 0;
+    line-height: 1.1;
+    font-size: 58px;
+    color: var(--text);
+
+    @media only screen and (min-width: 992px) {
+        font-size: 84px;
+    }
+}
+
+.spring-collection__title > span {
+    color: var(--accent)
+}
+
+.spring-collection__subtitle {
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.spring-collection__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 15px 32px;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-secondary), Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background-color: var(--accent);
+    border-radius: 5px;
+    box-shadow: rgba(39, 37, 40, 0.28) 0 3px 10px 0;
+    transition: all .25s ease;
+  }
+  
+  .spring-collection__action:hover {
+    background-color: var(--gray-color3);
+  }
+  
+  .spring-collection__action > svg {
+    width: 24px;
+  }
