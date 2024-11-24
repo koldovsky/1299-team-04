@@ -77,7 +77,7 @@
   border: none;
   padding: 15px 20px 15px 20px;
 }
-.our-finds__button:active {
+.our-finds__button.active {
   display: inline-block;
   color: var(--text);
   border-bottom: 2px solid var(--accent);
