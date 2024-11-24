@@ -127,7 +127,7 @@ function displayProducts(category) {
         </div>
         <div class="our-finds__order-div">
           <span class="order-button">Order Now</span>
-        </div>
+        </div>  
       </div>`;
   }
 
