@@ -155,7 +155,7 @@ addButtonEvent('chairsBtn', 'Chairs');
 addButtonEvent('lampsBtn', 'Lamps');
 addButtonEvent('tablesBtn', 'Tables');
 
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
   setActiveButton('chairsBtn');
   displayProducts('Chairs');
 });
