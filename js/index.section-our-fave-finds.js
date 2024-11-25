@@ -127,7 +127,7 @@ function displayProducts(category) {
         </div>
         <div class="our-finds__order-div">
           <span class="order-button">Order Now</span>
-        </div>  
+        </div>
       </div>`;
   }
 
@@ -155,7 +155,5 @@ addButtonEvent('chairsBtn', 'Chairs');
 addButtonEvent('lampsBtn', 'Lamps');
 addButtonEvent('tablesBtn', 'Tables');
 
-window.addEventListener('load', function () {
-  setActiveButton('chairsBtn');
-  displayProducts('Chairs');
-});
+setActiveButton('chairsBtn');
+displayProducts('Chairs');
