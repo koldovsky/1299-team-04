@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniture Store Website Template Demo</title>
     <link rel="shortcut icon" href="img/global/favicon.png" type="image/x-icon" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -17,13 +18,30 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
+    <!-- Valeriia Kolomiiets -->
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header.partial.html"
+    ></header>
     <main>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-hero.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-collections.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-top-collections.partial.html"
       ></section>
 
       <section
@@ -38,25 +56,37 @@
         data-hx-get="index.section-spring-collection.partial.html"
       ></section>
 
-      <!-- Romanchuk -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-our-fave-finds.partial.html"
       ></section>
 
-      <!--Omelchyshyn-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.testimonials-carousel.partial.html"
+        data-hx-get="index.section-partners.partial.html"
+      ></section>
+
+      <!-- Laba -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-our-top-brands.partial.html"
       ></section>
 
       <!--Omelchyshyn-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.about-us-accordion.partial.html"
+        data-hx-get="index.section-testimonials-carousel.partial.html"
+      ></section>
+
+      <!--Omelchyshyn-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-about-us-accordion.partial.html"
       ></section>
 
       <!--Yakhimovich-->
@@ -71,17 +101,11 @@
         data-hx-get="index.next-day-delivery.partial.html"
       ></div>
 
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.contacts-form.partial.html"
-      ></section>
-
       <!-- Valeriia Kolomiiets -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="contacts.form.partial.html"
+        data-hx-get="index.contacts-form.partial.html"
       ></section>
     </main>
     <footer
@@ -89,5 +113,8 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

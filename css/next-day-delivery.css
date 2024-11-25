@@ -1,0 +1,15 @@
+.main-advantages-of-services{
+    display: flex;
+    background-color: #f7f5f6;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+.delivery-icon{
+    width: 20%;
+    height: auto;
+    
+}

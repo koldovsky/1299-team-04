@@ -1,0 +1,27 @@
+.top-collections {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../img/global/dots-decor.png") center center / 22px, rgb(255, 255, 255);
+
+  @media only screen and (min-width: 1023px) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.top-collections__title {
+  font-size: 2.75rem;
+  text-align: center;
+
+  @media only screen and (min-width: 599px) {
+    font-size: 3.625rem;
+  }
+
+  @media only screen and (min-width: 1023px) {
+    font-size: 5.25rem;
+  }
+
+  span {
+    color: var(--accent);
+  }
+}

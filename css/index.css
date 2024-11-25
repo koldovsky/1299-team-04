@@ -1,7 +1,13 @@
 @import './hero.css';
+@import './collections.css';
+@import './top-collections.css';
+@import './section-spring-collection.css';
 @import './testimonials-carousel.css';
 @import './about-us-accordion.css';
 @import './our-fave-finds.css';
+@import './partners.css';
 @import './contacts-form.css';
 @import './best-selling-products.css';
 @import './our-blog.css';
+@import './global.footer.css';
+@import './next-day-delivery.css';
