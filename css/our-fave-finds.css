@@ -1,35 +1,32 @@
 .banners {
   margin: 0 auto;
   max-width: 1170px;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding: 24px;
+  padding: 100px 32px 0px 32px;
+  /* padding-right: 20px; */
   box-sizing: border-box;
-}
-/* @media (max-width: 479px) {
+  }
+@media (max-width: 479px) {
   .banners {
   grid-template-columns: 1fr;
   }
-} */
+}
 .background__left {
   background: url('../img/section-our-fave-finds/fonts/banner-left.webp');
   background-size: cover;
   background-position: center;
-  width: 570px;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
 }
 .background__right {
   background: url('../img/section-our-fave-finds/fonts/banner-right.webp');
   background-size: cover;
   background-position: center;
-  width: 570px;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
 }
 .banner__upper-text {
   font-size: 14px;
