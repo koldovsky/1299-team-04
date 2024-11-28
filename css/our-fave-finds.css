@@ -1,12 +1,10 @@
 .banners {
   margin: 0 auto;
   max-width: 1170px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  padding: 100px 32px 0px 32px;
-  /* padding-right: 20px; */
+  padding: 100px 15px 50px 15px;
   box-sizing: border-box;
   }
 @media (max-width: 479px) {
@@ -15,6 +13,7 @@
   }
 }
 .background__left {
+  display: grid;
   background: url('../img/section-our-fave-finds/fonts/banner-left.webp');
   background-size: cover;
   background-position: center;
@@ -22,6 +21,7 @@
   padding: 15px;
 }
 .background__right {
+  display: grid;
   background: url('../img/section-our-fave-finds/fonts/banner-right.webp');
   background-size: cover;
   background-position: center;
@@ -68,9 +68,10 @@
   height: 43px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   margin-top: 40px;
-  padding: 16px 24px 16px 24px;
+  margin-bottom: 20px;
   border-radius: 5px;
   font-size: 10.8px;
   cursor: pointer;
@@ -133,7 +134,6 @@
 .our-finds__bottom-line {
   border-bottom: 1px solid var(--gray-color2);
   max-width: 1170px;
-  height: 1px;
   margin: 0 auto;
 }
 .our-finds__products {
