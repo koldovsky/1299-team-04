@@ -28,7 +28,7 @@ function renderProductsCard(products_card) {
     productsHtml += `    
         <article class="product-card">
             <div class="product-card__image">
-                <a href="#">
+                <a href="index.section-best-selling-products-details.partial.html">
                     <img src="${product.image}" alt="${product.alt}"/>
                 </a>
             </div>
