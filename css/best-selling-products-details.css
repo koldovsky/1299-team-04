@@ -21,7 +21,7 @@
       border-color: #ccc; /* Забезпечує стабільний вигляд */
     }
 
-    .input-number::-webkit-inner-spin-button, 
+    .input-number::-webkit-inner-spin-button,
     .input-number::-webkit-outer-spin-button {
       opacity: 1; /* Завжди показувати стрілочки */
       display: inline; /* Увімкнути відображення стрілочок */
@@ -54,10 +54,6 @@ header {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-}
-
-main {
-    display: flex;
 }
 
 .product-gallery {
@@ -181,7 +177,7 @@ main {
     background-color: #fff;
     width: 60px; /* Ширина контейнера */
     text-align: center;
-    
+
 }
 
 .add-to-cart {
