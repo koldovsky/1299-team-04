@@ -23,81 +23,70 @@
 }
 /* ліва чатина */
 .product__gallery {
-  flex: 1;
-  position: relative;
-  text-align: center;
-}
-
-.main-image {
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  transition: box-shadow 0.3s;
-}
-
-.main-image:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.thumbnail-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.thumbnail {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  transition: border-color 0.3s;
-}
-
-.thumbnail.active {
-  border-color: #4caf50;
-}
-
-.thumbnail:hover {
-  border-color: #777;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
-}
-
-.arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.arrow.left {
-  left: 0;
-}
-
-.arrow.right {
-  right: 0;
-}
-
-.product-gallery:hover .arrow {
-  display: flex;
-}
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid transparent; /* Для ефекту, коли зображення активне */
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: -20px;
+  }
+  
+  .arrow.right {
+    right: -20px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid green;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5); /* Ефект активного елемента */
+  }
+  
+  .thumbnail:hover {
+    border: 2px solid gray;
+  }
+  
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
                                             /* початок правої */
 
