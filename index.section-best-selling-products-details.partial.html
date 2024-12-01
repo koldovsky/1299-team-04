@@ -32,10 +32,10 @@
     <div class="main__container">
     <div class="container">
       <header>
-        <a href="#" class="store-homepage">Store homepage</a>
+        <a href="#" class="store__homepage">Store homepage</a>
       </header>
-      <main>
-        <div class="product-gallery">
+      <main class="container__main">
+        <div class="product__gallery">
           <button class="arrow left">&lt;</button>
           <img src="img/section-best-selling-products/white_armchair.png" alt="Lord armchair" class="main-image" />
           <button class="arrow right">&gt;</button>
@@ -46,32 +46,28 @@
             <img src="img/section-best-selling-products/white_armchair.png" alt="Thumbnail 4" class="thumbnail" />
           </div>
         </div>
-        <div class="product-details">
+        <div class="product__details">
           <p class="in__stock">In stock</p>
           <h3 class="title">Lord armchair, Miedel Home (LAMH)</h3>
           <p class="product__code">Product code 14</p>
           <p class="price">120,00 USD</p>
           <hr class="horizontal__line">
-
-          <div class="input-container">
-            <input type="number" class="input-number" value="1" min="1">
-          </div>
-
           <div class="quantity__add">
-            <input type="number" value="1" min="1" max="100" class="quantity" />
-            <button class="add-to-cart">Add to Cart</button>
+            <input type="number" value="1" min="1" max="100" class="input__number" />
+            <button class="add__to__cart">ADD TO CART</button>
           </div>
-          <div class="description">
-            <h2>Description</h2>
-            <p>
+          <div>
+            <h2 class="description">DESCRIPTION</h2>
+            <hr class="horizontal__line__description"><hr class="horizontal__line__description__after">
+            <p class="description__info">
               Do you want to feel comfortable and hide from the bad weather? This armchair is
               perfect for relaxing with a book or a cup of tea. It also provides extra back support.
             </p>
-            <p><strong>Dimensions and materials:</strong></p>
-            <ul>
-              <li>28" x 38"</li>
-              <li>Faux suede, wood</li>
-            </ul>
+            <p></p>
+            <p class="description__info">Dimensions and materials:<br>
+              28" x 38"<br>
+              Faux suede, wood
+            </p>
           </div>
         </div>
       </main>
