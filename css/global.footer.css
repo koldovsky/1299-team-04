@@ -87,6 +87,7 @@ ul {
 
 .footer__menu-link{
     transition: all 0.3s ease-in-out;
+    color: var(--text-white);
 }
 
 .footer__menu-link:hover,

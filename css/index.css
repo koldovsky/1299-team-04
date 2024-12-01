@@ -2,12 +2,14 @@
 @import './collections.css';
 @import './top-collections.css';
 @import './section-spring-collection.css';
-@import './testimonials-carousel.css';
-@import './about-us-accordion.css';
 @import './our-fave-finds.css';
 @import './partners.css';
 @import './contacts-form.css';
 @import './best-selling-products.css';
 @import './our-blog.css';
 @import './global.footer.css';
+<<<<<<< HEAD
 @import './next-day-delivery.css';
+=======
+@import './best-selling-products-details.css';
+>>>>>>> 521064cc8c54bb5c899002bdd9701c60a5f5d018
