@@ -6,9 +6,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0px 15px 0px 15px;
+  max-width: 1170px;
 }
 
 .store__homepage {
@@ -19,9 +19,16 @@
 
 .container__main {
   margin-top: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-/* ліва чатина */
+
+@media (max-width: 767px) {
+  .container__main {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product__gallery {
   flex: 1;
   display: flex;
@@ -47,44 +54,31 @@ img {
 .arrow {
   position: absolute;
   top: 40%;
-  transform: translateY(-50%);
   color: var(--text);
   border: none;
   background: none;
   cursor: pointer;
   z-index: 2;
   opacity: 1;
-  pointer-events: all; /* Ховає кнопку для кліків, поки вона прихована */
+  pointer-events: all;
   transition: all 0.3s ease;
 }
 
 .arrow.left {
-  left: 0px;
+  left: 10px;
   background: none;
 }
 
 .arrow.right {
-  right: 0px;
+  right: 10px;
   background: none;
-}
-
-.container__img:hover .arrow {
-  opacity: 1;
-  pointer-events: all; /* Робить кнопку клікабельною */
-}
-
-.container__img:hover .arrow.left {
-  left: 100px; /* Виїжджає ближче до зображення */
-}
-
-.container__img:hover .arrow.right {
-  right: 100px; /* Виїжджає ближче до зображення */
 }
 
 .thumbnail__container {
   display: flex;
   justify-content: start;
   gap: 5px;
+  margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -104,8 +98,6 @@ img {
 .thumbnail:hover {
   border: 2px solid var(--gray-color6);
 }
-
-/* початок правої */
 
 .product__details {
   flex: 1;
@@ -196,7 +188,7 @@ img {
   opacity: 1;
   border: none;
   height: 2px;
-  width: 98.34px;
+  width: 6.14rem;
   background: var(--accent);
 }
 .horizontal__line__description__after {
@@ -204,11 +196,10 @@ img {
   opacity: 0.2;
   border: none;
   height: 1px;
-  width: 471.67px;
+  width: 100%;
   background-color: var(--gray-color2);
   position: relative;
   top: -17px;
-  left: 98.34px;
 }
 
 .description__info {
