@@ -43,14 +43,6 @@
   align-items: center;
 }
 
-img {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 .arrow {
   position: absolute;
   top: 40%;
