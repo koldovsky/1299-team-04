@@ -176,10 +176,8 @@ ul {
     background-color: #414141;
     border: none;
     border-radius: 8px;
-
-    @media only screen and (min-width: 768px) {
-        padding: 20px 0;
-    }
+    padding: 20px 0 20px 16px;
+    color: var(--text-white);
 }
 
 .footer__input::placeholder{
