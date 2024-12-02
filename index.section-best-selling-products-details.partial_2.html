@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lord armchair, Miedel Home</title>
+    <title>Ultimate Green chair, XODO</title>
     <link rel="shortcut icon" href="img/global/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -67,22 +67,22 @@
             </button>
             <div class="thumbnail__container">
               <img
-                src="img/section-best-selling-products/white_armchair.png"
+                src="img/section-best-selling-products/green_armchair.png"
                 alt="Thumbnail 1"
                 class="thumbnail active"
               />
               <img
-                src="img/section-best-selling-products/white_armchair.png"
+                src="img/section-best-selling-products/green_armchair.png"
                 alt="Thumbnail 2"
                 class="thumbnail"
               />
               <img
-                src="img/section-best-selling-products/white_armchair.png"
+                src="img/section-best-selling-products/green_armchair.png"
                 alt="Thumbnail 3"
                 class="thumbnail"
               />
               <img
-                src="img/section-best-selling-products/white_armchair.png"
+                src="img/section-best-selling-products/green_armchair.png"
                 alt="Thumbnail 4"
                 class="thumbnail"
               />
@@ -91,9 +91,9 @@
 
           <div class="product__details">
             <p class="in__stock">In stock</p>
-            <h3 class="title">Lord armchair, Miedel Home (LAMH)</h3>
-            <p class="product__code">Product code 14</p>
-            <p class="price">120,00 USD</p>
+            <h3 class="title">Ultimate Green chair, XODO (UGCX)</h3>
+            <p class="product__code">Product code 15</p>
+            <p class="price">90,00 USD</p>
             <hr class="horizontal__line" />
             <div class="quantity__add">
               <input type="number" value="1" min="1" max="100" class="input__number" />
@@ -104,15 +104,15 @@
               <hr class="horizontal__line__description" />
               <hr class="horizontal__line__description__after" />
               <p class="description__info">
-                Do you want to feel comfortable and hide from the bad weather?<br />
-                This armchair is perfect for relaxing with a book or a cup of tea.<br />
-                It also provides extra back support.<br />
+                Simple yet functional, this chair is perfect for your minimalistic<br />
+                dining room. It will become a bright spot in your interior design<br />
+                and will awaken your appetite.
               </p>
               <p></p>
               <p class="description__info">
                 Dimensions and materials:<br />
-                28" x 38"<br />
-                Faux suede, wood
+                21" x 32"<br />
+                Plastic
               </p>
             </div>
           </div>
@@ -128,6 +128,54 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
     ></script>
-    <script src="js/index.js"></script>
+    <script>
+      const slides = [
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+      ];
+
+      let currIdx = 0;
+
+      function renderCarousel() {
+        const slidesContainer = document.querySelector('.container__img');
+        slidesContainer.innerHTML = slides[currIdx];
+
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach((thumbnail, index) => {
+          if (index === currIdx) {
+            thumbnail.classList.add('active');
+          } else {
+            thumbnail.classList.remove('active');
+          }
+        });
+      }
+
+      function nextSlide() {
+        currIdx = currIdx + 1 >= slides.length ? 0 : currIdx + 1;
+        renderCarousel();
+      }
+
+      function prevSlide() {
+        currIdx = currIdx - 1 < 0 ? slides.length - 1 : currIdx - 1;
+        renderCarousel();
+      }
+
+      function selectThumbnail(index) {
+        currIdx = index;
+        renderCarousel();
+      }
+
+      document.querySelector('.arrow.right').addEventListener('click', nextSlide);
+      document.querySelector('.arrow.left').addEventListener('click', prevSlide);
+
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => selectThumbnail(index));
+      });
+
+      renderCarousel();
+    </script>
   </body>
 </html>

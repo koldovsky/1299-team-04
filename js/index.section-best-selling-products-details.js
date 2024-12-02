@@ -1,8 +1,8 @@
 const slides = [
-  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="GG"</div>',
-  '<div><img src="img/section-best-selling-products/green_armchair.png" alt="GG"</div>',
-  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="GG"</div>',
-  '<div><img src="img/section-best-selling-products/pink_armchair.png" alt="GG"</div>'
+  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="Minimalist interior with a white armchair featuring a soft cushion, positioned next to a tripod floor lamp with a white lampshade and a decorative plant in a white pot on the floor. The walls and floor are also in white."</div>',
+  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="Minimalist interior with a white armchair featuring a soft cushion, positioned next to a tripod floor lamp with a white lampshade and a decorative plant in a white pot on the floor. The walls and floor are also in white."</div>',
+  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="Minimalist interior with a white armchair featuring a soft cushion, positioned next to a tripod floor lamp with a white lampshade and a decorative plant in a white pot on the floor. The walls and floor are also in white."</div>',
+  '<div><img src="img/section-best-selling-products/white_armchair.png" alt="Minimalist interior with a white armchair featuring a soft cushion, positioned next to a tripod floor lamp with a white lampshade and a decorative plant in a white pot on the floor. The walls and floor are also in white."</div>'
 ]
 
 let currIdx = 0;

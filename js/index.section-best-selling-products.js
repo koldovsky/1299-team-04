@@ -5,6 +5,7 @@ const products_card = [
     alt: 'Minimalist interior with a white armchair featuring a soft cushion, positioned next to a tripod floor lamp with a white lampshade and a decorative plant in a white pot on the floor. The walls and floor are also in white.',
     title: 'Lord armchair, Miedel Home',
     price: '120,00USD',
+    url: 'index.section-best-selling-products-details.partial.html',
   },
   {
     id: '2',
@@ -12,6 +13,7 @@ const products_card = [
     alt: 'Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor.',
     title: 'Ultimate Greenchair, XODO',
     price: '90,00USD',
+    url: 'index.section-best-selling-products-details.partial_2.html',
   },
   {
     id: '3',
@@ -19,6 +21,7 @@ const products_card = [
     alt: 'Minimalist interior with a pink armchair featuring wooden legs, positioned next to a small round gold side table holding a small orange candle. A cluster of round pendant lights hangs above, with a white wall and floor in the background.',
     title: 'Valetta armchair, ZIX studio',
     price: '310,00USD',
+    url: 'index.section-best-selling-products-details.partial_3.html',
   },
 ];
 
@@ -28,11 +31,11 @@ function renderProductsCard(products_card) {
     productsHtml += `    
         <article class="product-card">
             <div class="product-card__image">
-                <a href="index.section-best-selling-products-details.partial.html">
+                <a href="${product.url}">
                     <img src="${product.image}" alt="${product.alt}"/>
                 </a>
             </div>
-            <a style="text-decoration: none " href="index.section-best-selling-products-details.partial.html">
+            <a style="text-decoration: none " href="${product.url}">
             <h3 class="product-card__title">${product.title}</h3></a>
             <p class="product-card__price">${product.price}</p>
             <button class="product-card__button" type="button">ORDER NOW</button>
@@ -43,7 +46,7 @@ function renderProductsCard(products_card) {
 
 renderProductsCard(products_card);
 
-///RENDER PAGE FO DETAILs
+///RENDER PAGE FOr DETAILs
 
 const products_details = [
   {
@@ -76,96 +79,9 @@ const products_details = [
     image: 'img/section-best-selling-products/pink_armchair.png',
     alt: 'Minimalist interior with a pink armchair featuring wooden legs, positioned next to a small round gold side table holding a small orange candle. A cluster of round pendant lights hangs above, with a white wall and floor in the background.',
   },
-];
+];    
 
-function renderProductsDetails(products_details) {
-  let productsHtml = '';
-  for (const product of products_details) {
-    productsHtml += `    
-          <div class="product__gallery">
-            <button class="arrow left">
-              <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="12 19 5 12 12 5"></polyline>
-            </svg>
-            </button>
-            <div class="container__img">  
-            </div>
-            <button class="arrow right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-            <div class="thumbnail__container">
-              <img
-                src="img/section-best-selling-products/white_armchair.png"
-                alt="Thumbnail 1"
-                class="thumbnail active"
-              />
-              <img
-                src="img/section-best-selling-products/green_armchair.png"
-                alt="Thumbnail 2"
-                class="thumbnail"
-              />
-              <img
-                src="img/section-best-selling-products/white_armchair.png"
-                alt="Thumbnail 3"
-                class="thumbnail"
-              />
-              <img
-                src="img/section-best-selling-products/pink_armchair.png"
-                alt="Thumbnail 4"
-                class="thumbnail"
-              />
-            </div>
-          </div>
-
-          <div class="product__details">
-            <p class="in__stock">In stock</p>
-            <h3 class="title">Lord armchair, Miedel Home (LAMH)</h3>
-            <p class="product__code">Product code 14</p>
-            <p class="price">120,00 USD</p>
-            <hr class="horizontal__line" />
-            <div class="quantity__add">
-              <input type="number" value="1" min="1" max="100" class="input__number" />
-              <button class="add__to__cart">ADD TO CART</button>
-            </div>
-            <div>
-              <h2 class="description">DESCRIPTION</h2>
-              <hr class="horizontal__line__description" />
-              <hr class="horizontal__line__description__after" />
-              <p class="description__info">
-                Do you want to feel comfortable and hide from the bad weather?<br>
-                This armchair is perfect for relaxing with a book or a cup of tea.<br>
-                It also provides extra back support.<br>
-              </p>
-              <p></p>
-              <p class="description__info">
-                Dimensions and materials:<br />
-                28" x 38"<br />
-                Faux suede, wood
-              </p>
-            </div>
-          </div>`;
-  }
-  document.querySelector('.products__list').innerHTML = productsHtml;
-}
-
-renderProductsCard(products_card);
+/// Доброго вечора доби, мені соромно що я не встиг за допомогою js дабавити сторінки, на жаль,
+/// при всій мотивації вчити і практикуватись, просто брак часу.
+/// Дякую за розуміння, після здачі я хочу все до кінця доробити бо справді це дуже цікаво.
+/// Дякую вам що викладали для нас весь матеріал та пояснювали, ви дуже крутий)
