@@ -29,8 +29,6 @@
     position: relative;
     margin-top: 30px;
     @media only screen and (max-width: 768px) {
-      padding-left: 15px;
-      padding-right: 15px;
       margin-top: 50px;
     }
   }
