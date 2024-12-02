@@ -3,13 +3,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #f7f5f6;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-top: 90px;
     padding-bottom: 90px;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    padding-left: 13%;
+    padding-right: 13%;
 }
 @media (max-width: 480px) {
     .main-advantages-of-services {
