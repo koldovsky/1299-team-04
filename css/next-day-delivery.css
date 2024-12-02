@@ -1,15 +1,46 @@
 .main-advantages-of-services{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #f7f5f6;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 90px;
     padding-bottom: 90px;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+}
+@media (max-width: 480px) {
+    .main-advantages-of-services {
+        flex-direction: column;
+    }
+}
+@media (max-width: 992px) {
+    .main-advantages-of-services__next-day-delivery,
+    .main-advantages-of-services__money-back,
+    .main-advantages-of-services__warranty-handling,
+    .main-advantages-of-services__payment-methods {
+        flex: 1 1 calc(50% - 20px); 
+
+    }
+}
+@media (min-width: 992px) {
+    .main-advantages-of-services__next-day-delivery,
+    .main-advantages-of-services__money-back,
+    .main-advantages-of-services__warranty-handling,
+    .main-advantages-of-services__payment-methods {
+        flex: 1 1 calc(25% - 20px); 
+    }
+}
+.main-advantages-of-services p{
+    color: #707070;
+}
+.main-advantages-of-services h2{
+    
 }
 .delivery-icon{
-    width: 20%;
+    width: 30%;
     height: auto;
     
 }
