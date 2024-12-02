@@ -2,6 +2,7 @@ function init() {
   import('./index.section-header.js');
   import('./index.section-our-fave-finds.js');
   import('./index.section-partners.js');
+  import('./index.section-testimonials.js');
   import('./index.section-best-selling-products.js');
   import('./index.section-best-selling-products-details.js');
   import('./index.section-contact-form-partial.js');
