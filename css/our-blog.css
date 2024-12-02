@@ -21,9 +21,7 @@
   color: var(--text);
   text-decoration: none;
 }
-.main-posts__not-to-use-pink,
-.main-posts__new-brands,
-.main-posts__trending-colors {
+.main-posts__main-post {
   width: 100%;
   min-width: 280px;
   box-sizing: border-box;
@@ -31,9 +29,7 @@
   border-radius: 8px;
   text-align: left;
 }
-.main-posts__not-to-use-pink img,
-.main-posts__new-brands img,
-.main-posts__trending-colors img {
+.main-posts__main-post img {
   width: 100%;
   height: auto;
 }
@@ -56,9 +52,7 @@
     gap: 20px; /* Простір між блоками */
   }
 
-  .main-posts__not-to-use-pink,
-  .main-posts__new-brands,
-  .main-posts__trending-colors {
+  .main-posts__main-post {
     width: calc(33.33% - 20px); /* Усі блоки однакової ширини */
     box-sizing: border-box; /* Враховувати padding у ширині */
   }

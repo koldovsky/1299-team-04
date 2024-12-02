@@ -2,6 +2,7 @@
   text-align: center;
   padding-top: 90px;
   padding-bottom: 90px;
+  min-height: 50rem;
 }
 
 .main__html {
@@ -25,7 +26,7 @@
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1036px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 @media (min-width: 0px) {
@@ -49,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
+  margin-top: 2rem;
   max-width: 100%;
   height: auto;
 }
@@ -61,6 +63,7 @@
 
 .product-card__title {
   font-size: 1.125rem;
+  font-weight: 500;
   color: var(--text);
   margin: 1rem 0 0;
   text-decoration: none;
