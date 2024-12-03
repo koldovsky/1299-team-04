@@ -5,12 +5,12 @@ function render_posts_on_main(posts) {
     for (const post of posts){
         postsHtml += `
         <div class="main-posts__main-post">
-            <a href="#" class="blog-part"><img src="${post.image}" alt="${post.title}"></a>
+            <a href="${post.link}" class="blog-part"><img src="${post.image}" alt="${post.title}"></a>
             <p>${post.date}</p>
-            <a href="#" class="blog-part">
+            <a href="${post.link}" class="blog-part">
                 <h3>${post.title}</h3>
             </a>
-            <a href="#" class="blog-part">
+            <a href="${post.link}" class="blog-part">
                 <p>${post.mainText}</p>
             </a>
             <div class="main-posts__post-creator">
@@ -23,4 +23,4 @@ function render_posts_on_main(posts) {
 }
 render_posts_on_main(posts);
 
-const postElements = document.querySelectorAll('.main-posts__main-post');
+

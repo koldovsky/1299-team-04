@@ -1,44 +1,96 @@
-.main-advantages-of-services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #f7f5f6;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding-left: 13%;
-    padding-right: 13%;
+.main-advantages-of-services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f7f5f6;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 @media (max-width: 480px) {
-    .main-advantages-of-services {
-        flex-direction: column;
-    }
+  .main-advantages-of-services {
+    flex-direction: column;
+  }
 }
 @media (max-width: 992px) {
-    .main-advantages-of-services__next-day-delivery,
-    .main-advantages-of-services__money-back,
-    .main-advantages-of-services__warranty-handling,
-    .main-advantages-of-services__payment-methods {
-        flex: 1 1 calc(50% - 20px); 
-
-    }
+  .main-advantages-of-services__next-day-delivery,
+  .main-advantages-of-services__money-back,
+  .main-advantages-of-services__warranty-handling,
+  .main-advantages-of-services__payment-methods {
+    flex: 1 1 calc(50% - 20px);
+  }
 }
 @media (min-width: 992px) {
-    .main-advantages-of-services__next-day-delivery,
-    .main-advantages-of-services__money-back,
-    .main-advantages-of-services__warranty-handling,
-    .main-advantages-of-services__payment-methods {
-        flex: 1 1 calc(25% - 20px); 
-    }
+  .main-advantages-of-services__next-day-delivery,
+  .main-advantages-of-services__money-back,
+  .main-advantages-of-services__warranty-handling,
+  .main-advantages-of-services__payment-methods {
+    flex: 1 1 calc(25% - 20px);
+  }
 }
-.main-advantages-of-services p{
-    color: #707070;
+.main-advantages-of-services p {
+  color: #707070;
 }
 
-.delivery-icon{
-    width: 30%;
-    height: auto;
-    
+.delivery-icon {
+  width: 30%;
+  height: auto;
+}
+
+.inner-post__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inner-post__date {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+.inner-post__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.inner-post__author {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.inner-post__paragraph {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  font-family: Poppins;
+}
+.inner-post__under-title {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 38px;
+    color: #444;
+    line-height: 1.8;
+    font-family: Poppins;
+}
+.inner-post__image-conteiner,
+.inner-post__date,
+.inner-post__title,
+.inner-post__author,
+.inner-post__paragraph,
+.inner-post__under-title {
+  padding-left: 20px;
+  padding-right: 20px;
 }
