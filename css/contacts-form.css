@@ -1,3 +1,11 @@
+.contacts {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    @media (min-width: 1024px) {
+      padding-top: 60px;
+    }
+}
+
 /* Contacts Container */
 .contacts__inner {
     margin-left: -15px;
@@ -5,13 +13,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .contacts__column {
     width: 100%;
-    padding: 15px; 
+    padding: 15px;
     @media (min-width: 1024px){
-        width: 50%;  
+        width: 50%;
     }
-
 }
 
 /* Contact Form Styling */
@@ -25,14 +33,16 @@
     }
 }
 
-.contacts-form h2 {
-    font-size: 24px;
+.contacts-details__title {
+    font-size: 2.375rem;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
-.contacts-form p {
+.contacts-details__description {
     margin-bottom: 20px;
-    color: #666;
+    line-height: 1.5;
+    max-width: 480px;
 }
 
 .contacts-form__input,
@@ -40,27 +50,28 @@
     width: 100%;
     padding: 20px 30px 20px 30px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px; 
+    border: 1px solid var(--gray-color8);
+    border-radius: 10px;
     font-size: 0.875rem;
     resize: none;
 }
+
 .contacts-form__textarea {
     min-height: 150px;
     height: 150px;
-} 
+}
 
-.contact-form input:focus,
+.contacts-form__input:focus,
 .contacts-form__textarea:focus {
-    border-color:#7BB67C;
+    border-color: var(--accent);
     outline: none;
 }
 
 .contacts-form__button {
     width: 100%;
     padding: 12px;
-    background-color:#7BB67C;
-    color: #FFFFFF;
+    background-color: var(--accent);
+    color: var(--text-white);
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -69,7 +80,7 @@
 }
 
 .contact-form .submit-button:hover {
-    background-color: var(--accent: #7BB67C);
+    background-color: var(--accent);
 }
 
 .contacts-rows {
@@ -78,23 +89,58 @@
 }
 
 .contacts-row {
-    display: table-row; 
+    display: table-row;
 }
+
+.contacts-row__label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .contacts-row__info {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .contacts-row:last-child {
+    margin-bottom: 0;
+  }
+
 .contacts-row + .contacts-row {
     margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .contacts-row__label,
 .contacts-row__info {
     display: table-cell;
     padding-top: 15px;
+    line-height: 1.35;
+}
+
+.contacts-row__link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts-row__link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.contacts__map {
+    margin-top: 20px;
 }
 
 /* Map Styling */
 .map-container iframe {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     border: none;
+    overflow: hidden;
 }
 
 /* Responsive Design */

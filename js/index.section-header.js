@@ -14,11 +14,15 @@ const debounce = (callback, wait) => {
 const $burger = document.querySelector('.js-burger');
 const $mobMenu = document.querySelector('.js-mob-menu');
 
+const closeMenu = () => {
+  document.body.classList.remove('is-overflow-hidden');
+  $burger.classList.remove('is-opened');
+  $mobMenu.classList.remove('is-opened');
+};
+
 const handleResize = debounce(() => {
   if (window.matchMedia('(min-width: 900px)').matches) {
-    document.body.classList.remove('is-overflow-hidden');
-    $burger.classList.remove('is-opened');
-    $mobMenu.classList.remove('is-opened');
+    closeMenu();
   }
 }, 400);
 
@@ -26,6 +30,12 @@ $burger.addEventListener('click', () => {
   document.body.classList.toggle('is-overflow-hidden');
   $burger.classList.toggle('is-opened');
   $mobMenu.classList.toggle('is-opened');
+});
+
+[...document.querySelectorAll('.js-nav-link')].forEach((el) => {
+  el.addEventListener('click', () => {
+    closeMenu();
+  });
 });
 
 window.addEventListener('resize', handleResize);

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Green chair, XODO</title>
+    <link rel="shortcut icon" href="img/global/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header.partial.html"
+    ></header>
+    <div class="main__container">
+      <div class="container">
+        <header>
+          <a href="#" class="store__homepage">Store homepage</a>
+        </header>
+        <main class="container__main">
+          <div class="product__gallery">
+            <button class="arrow left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <div class="container__img"></div>
+            <button class="arrow right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <div class="thumbnail__container">
+              <img
+                src="img/section-best-selling-products/green_armchair.png"
+                alt="Thumbnail 1"
+                class="thumbnail active"
+              />
+              <img
+                src="img/section-best-selling-products/green_armchair.png"
+                alt="Thumbnail 2"
+                class="thumbnail"
+              />
+              <img
+                src="img/section-best-selling-products/green_armchair.png"
+                alt="Thumbnail 3"
+                class="thumbnail"
+              />
+              <img
+                src="img/section-best-selling-products/green_armchair.png"
+                alt="Thumbnail 4"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="product__details">
+            <p class="in__stock">In stock</p>
+            <h3 class="title">Ultimate Green chair, XODO (UGCX)</h3>
+            <p class="product__code">Product code 15</p>
+            <p class="price">90,00 USD</p>
+            <hr class="horizontal__line" />
+            <div class="quantity__add">
+              <input type="number" value="1" min="1" max="100" class="input__number" />
+              <button class="add__to__cart">ADD TO CART</button>
+            </div>
+            <div>
+              <h2 class="description">DESCRIPTION</h2>
+              <hr class="horizontal__line__description" />
+              <hr class="horizontal__line__description__after" />
+              <p class="description__info">
+                Simple yet functional, this chair is perfect for your minimalistic<br />
+                dining room. It will become a bright spot in your interior design<br />
+                and will awaken your appetite.
+              </p>
+              <p></p>
+              <p class="description__info">
+                Dimensions and materials:<br />
+                21" x 32"<br />
+                Plastic
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
+    ></script>
+    <script>
+      const slides = [
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+        '<div><img src="img/section-best-selling-products/green_armchair.png" alt="Minimalist interior with a green chair placed next to a small black side table holding a glass vase with green leaves. Three hanging light bulbs are suspended above, and the background features a white wall and floor."</div>',
+      ];
+
+      let currIdx = 0;
+
+      function renderCarousel() {
+        const slidesContainer = document.querySelector('.container__img');
+        slidesContainer.innerHTML = slides[currIdx];
+
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        thumbnails.forEach((thumbnail, index) => {
+          if (index === currIdx) {
+            thumbnail.classList.add('active');
+          } else {
+            thumbnail.classList.remove('active');
+          }
+        });
+      }
+
+      function nextSlide() {
+        currIdx = currIdx + 1 >= slides.length ? 0 : currIdx + 1;
+        renderCarousel();
+      }
+
+      function prevSlide() {
+        currIdx = currIdx - 1 < 0 ? slides.length - 1 : currIdx - 1;
+        renderCarousel();
+      }
+
+      function selectThumbnail(index) {
+        currIdx = index;
+        renderCarousel();
+      }
+
+      document.querySelector('.arrow.right').addEventListener('click', nextSlide);
+      document.querySelector('.arrow.left').addEventListener('click', prevSlide);
+
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => selectThumbnail(index));
+      });
+
+      renderCarousel();
+    </script>
+  </body>
+</html>

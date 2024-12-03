@@ -1,0 +1,59 @@
+.our-blog {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.our-blog h2 {
+  font-size: 2.125rem;
+}
+.our-blog p {
+  font-size: 1rem;
+}
+.our-blog__main-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.blog-part {
+  color: var(--text);
+  text-decoration: none;
+}
+.main-posts__main-post {
+  width: 100%;
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+.main-posts__main-post img {
+  width: 100%;
+  height: auto;
+}
+.main-posts__post-creator {
+    display: flex;
+    align-items: center;
+}
+.main-posts__post-creator img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5%;
+}
+
+@media (min-width: 894px) {
+  .our-blog__main-posts {
+    flex-direction: row; /* Блоки в один рядок на широких екранах */
+    justify-content: space-between; /* Рівномірний розподіл по ширині */
+    gap: 20px; /* Простір між блоками */
+  }
+
+  .main-posts__main-post {
+    width: calc(33.33% - 20px); /* Усі блоки однакової ширини */
+    box-sizing: border-box; /* Враховувати padding у ширині */
+  }
+}

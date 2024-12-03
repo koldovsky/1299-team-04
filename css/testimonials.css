@@ -1,8 +1,9 @@
+/* Основні стилі */
 .testimonials-carousel {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 70px auto;
+  padding: 70px 20px; /* додано відступи з боків */
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -13,10 +14,11 @@
   width: 100%;
 }
 
+/* Заголовок та підзаголовок */
 .testimonials-carousel .title {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;      
+  color: #333;
   font-weight: bold;
 }
 
@@ -26,16 +28,18 @@
   color: #777;
 }
 
+/* Контейнер слайдів */
 .testimonials-carousel__container {
   display: flex;
   gap: 20px;
   transition: transform 0.5s ease;
   width: 100%;
-  padding: 0 auto;
+  margin: 0 auto; /* Центруємо контейнер */
 }
 
+/* Окремий слайд */
 .testimonials-carousel-slide {
-  flex: 0 0 calc(100% / 3); 
+  flex: 0 0 calc(100% / 3); /* Початково розраховано для трьох слайдів */
   max-width: calc(100% / 3);
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -45,9 +49,10 @@
   box-sizing: border-box;
   text-align: left;
   display: grid;
-  z-index: 10;
+  align-items: center; /* Вирівнювання елементів */
 }
 
+/* Зображення */
 .testimonials-carousel__slides-image {
   width: 70px;
   height: 70px;
@@ -57,6 +62,7 @@
   display: inline-block;
 }
 
+/* Ім'я користувача */
 .name {
   font-size: 1.1rem;
   font-weight: bold;
@@ -64,12 +70,14 @@
   margin-bottom: 5px;
 }
 
+/* Місто */
 .city {
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 15px;
 }
 
+/* Текст відгуку */
 .testimonials {
   font-size: 1rem;
   line-height: 1.5;
@@ -78,17 +86,19 @@
   font-style: italic;
 }
 
+/* Дата */
 .data {
   font-size: 0.8rem;
   color: #aaa;
 }
 
+/* Кнопки навігації */
 .prev-button,
 .next-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent;
+  background-color: #fff;
   border: 2px solid #ddd;
   border-radius: 50%;
   width: 40px;
@@ -112,9 +122,10 @@
 
 .prev-button:hover,
 .next-button:hover {
-  background-color: #f0f0f0;
+  background-color: #555;
 }
 
+/* Індикатори */
 .testimonials-carousel__indicators {
   display: flex;
   justify-content: center;
@@ -122,13 +133,14 @@
 }
 
 .carousel__indicator {
-  width: 10px;
-  height: 10px;
-  background-color: #ddd;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  background-color: #ddd;
   margin: 0 5px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .carousel__indicator--active {
@@ -139,12 +151,15 @@
   background-color: #555;
 }
 
+/* Адаптивність для 3 слайдів */
 @media (max-width: 1200px) {
   .testimonials-carousel-slide {
     flex: 0 0 calc(100% / 3);
     max-width: calc(100% / 3);
   }
 }
+
+/* Адаптивність для 2 слайдів */
 @media (max-width: 900px) {
   .testimonials-carousel-slide {
     flex: 0 0 calc(100% / 2);
@@ -158,9 +173,4 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-}
-.prev-button,
-.next-button {
-  width: 35px;
-  height: 35px;
 }
