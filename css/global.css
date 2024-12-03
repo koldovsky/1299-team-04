@@ -15,8 +15,9 @@
   --gray-color4: #2C2C2C;
   --gray-color5: #707070;
   --gray-color6: #f7f5f6;
-  --gray-color7: #27252847; /*shadow*/
-  --gray-color8: #C6C5C5;
+  --gray-color7: #27252847;  /*shadow*/
+  --gray-color8: #dddddd;
+  --gray-color9: #C6C5C5;
   --font-primary: 'Poppins';
   --font-secondary: 'Hind';
 }
