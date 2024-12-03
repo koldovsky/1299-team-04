@@ -1,6 +1,11 @@
 .contacts {
     padding-bottom: 60px;
+    padding-top: 30px;
+    @media (min-width: 1024px) {
+      padding-top: 60px;
+    }
 }
+
 /* Contacts Container */
 .contacts__inner {
     margin-left: -15px;
