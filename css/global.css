@@ -15,13 +15,9 @@
   --gray-color4: #2C2C2C;
   --gray-color5: #707070;
   --gray-color6: #f7f5f6;
-<<<<<<< HEAD
   --gray-color7: #27252847;  /*shadow*/
   --gray-color8: #dddddd;
-=======
-  --gray-color7: #27252847; /*shadow*/
-  --gray-color8: #C6C5C5;
->>>>>>> e73ae49ede8b6ba279220a51f40e5fba92cc450e
+  --gray-color9: #C6C5C5;
   --font-primary: 'Poppins';
   --font-secondary: 'Hind';
 }
