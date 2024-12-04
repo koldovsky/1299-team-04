@@ -8,6 +8,7 @@ function init() {
   import('./index.section-best-selling-products-details.js');
   import('./index.section-contact-form-partial.js');
   import('./index.our-blog-post-page.js');
+  import('./index.section-about-us.js');
 }
 
 const totalPartials = document.querySelectorAll(
