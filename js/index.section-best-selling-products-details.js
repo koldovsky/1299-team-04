@@ -9,7 +9,7 @@ let currIdx = 0;
 
 function renderCarousel() {
   const slidesContainer = document.querySelector('.container__img');
-  slidesContainer.innerHTML = slides[currIdx];
+  //--slidesContainer.innerHTML = slides[currIdx];--//
 
   const thumbnails = document.querySelectorAll('.thumbnail');
   thumbnails.forEach((thumbnail, index) => {
@@ -36,8 +36,8 @@ function selectThumbnail(index) {
   renderCarousel();
 }
 
-document.querySelector(".arrow.right").addEventListener('click', nextSlide);
-document.querySelector(".arrow.left").addEventListener('click', prevSlide);
+//--document.querySelector(".arrow.right").addEventListener('click', nextSlide);--//
+//--document.querySelector(".arrow.left").addEventListener('click', prevSlide);--//
 
 const thumbnails = document.querySelectorAll('.thumbnail');
 thumbnails.forEach((thumbnail, index) => {
