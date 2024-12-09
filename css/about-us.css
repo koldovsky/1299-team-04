@@ -1,0 +1,123 @@
+/* Загальний стиль для контейнера акордеону */
+.accordion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для блоку "About Us" */
+.accordion__about-us {
+  padding: 20px;
+}
+
+/* Заголовок і підзаголовок */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #757171;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+
+/* Стилі для елементів акордеону */
+.accordion__item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-button.collapsed {
+  background-color: #e0e0e0;
+}
+
+.accordion-icon {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button[aria-expanded="true"] .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Вміст акордеону */
+.accordion__content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  display: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.accordion__item.active .accordion__content {
+  display: block;
+}
+
+/* Стиль для блоку зі слайдом */
+.about-us__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/* Адаптивність для середніх екранів */
+@media (min-width: 768px) {
+  .accordion {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .accordion__about-us {
+    padding-right: 20px;
+  }
+
+  .about-us__slide {
+    justify-content: flex-end;
+  }
+}
+
+/* Адаптивність для великих екранів */
+@media (min-width: 1024px) {
+  .accordion {
+    gap: 60px;
+  }
+}

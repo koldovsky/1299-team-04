@@ -1,0 +1,176 @@
+/* Основні стилі */
+.testimonials-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px; /* додано відступи з боків */
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.testimonials-carousel__inner {
+  text-align: center;
+  width: 100%;
+}
+
+/* Заголовок та підзаголовок */
+.testimonials-carousel .title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.testimonials-carousel .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+/* Контейнер слайдів */
+.testimonials-carousel__container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  width: 100%;
+  margin: 0 auto; /* Центруємо контейнер */
+}
+
+/* Окремий слайд */
+.testimonials-carousel-slide {
+  flex: 0 0 calc(100% / 3); /* Початково розраховано для трьох слайдів */
+  max-width: calc(100% / 3);
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: left;
+  display: grid;
+  align-items: center; /* Вирівнювання елементів */
+}
+
+/* Зображення */
+.testimonials-carousel__slides-image {
+  width: 70px;
+  height: 70px;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: inline-block;
+}
+
+/* Ім'я користувача */
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Місто */
+.city {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Текст відгуку */
+.testimonials {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Дата */
+.data {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Кнопки навігації */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #555;
+}
+
+/* Індикатори */
+.testimonials-carousel__indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.carousel__indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel__indicator--active {
+  background-color: #333;
+}
+
+.carousel__indicator:hover {
+  background-color: #555;
+}
+
+/* Адаптивність для 3 слайдів */
+@media (max-width: 1200px) {
+  .testimonials-carousel-slide {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+}
+
+/* Адаптивність для 2 слайдів */
+@media (max-width: 900px) {
+  .testimonials-carousel-slide {
+    flex: 0 0 calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+/* Адаптивність для 1 слайду */
+@media (max-width: 600px) {
+  .testimonials-carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
