@@ -138,7 +138,7 @@
   @media (min-width: 1200px) {
     .brand-section__image-wrapper {
       height: auto;
-      max-height: 400px;
+      max-height: 300px;
     }
   
     .brand-section__image {
