@@ -124,11 +124,13 @@
       width: 50%;
     }
   
-    .brand-section__item--kuko{
+    .brand-section__item,
+    #kuko{
       flex-direction: row-reverse;
     }
   
-    .brand-section__item--landstrom {
+    .brand-section__item,
+    #landstrom{
       flex-direction: row;
     }
   }
