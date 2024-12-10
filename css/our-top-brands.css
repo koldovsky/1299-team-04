@@ -70,6 +70,7 @@
   }
   
   .brand-section__button-arrow {
+    overflow: auto;
     padding: 0px 20px 0px 0px;
     color: var(--gray-color1);
     transition: color 0.3s;
