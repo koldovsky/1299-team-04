@@ -120,13 +120,11 @@
       width: 50%;
     }
   
-    .brand-section__item,
-    #kuko {
+    .brand-section__item--kuko{
       flex-direction: row-reverse;
     }
   
-    .brand-section__item,
-    #landstorm {
+    .brand-section__item--landstorm {
       flex-direction: row;
     }
   }
