@@ -11,6 +11,10 @@
     flex-direction: column;
   }
   
+  .brand-section__image-wrapper {
+    overflow: hidden;
+  }
+
   .brand-section__image {
     width: 100%;
   }
@@ -124,7 +128,7 @@
       flex-direction: row-reverse;
     }
   
-    .brand-section__item--landstorm {
+    .brand-section__item--landstrom {
       flex-direction: row;
     }
   }
