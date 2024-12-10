@@ -135,10 +135,10 @@
     }
   }
   
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .brand-section__image-wrapper {
       height: auto;
-      max-height: 300px;
+      max-height: 445px;
     }
   
     .brand-section__image {
