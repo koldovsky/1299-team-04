@@ -1,53 +1,52 @@
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slidesContainer = document.querySelector('.testimonials-carousel__container');
-const indicators = document.querySelectorAll('.carousel__indicator');
+const carousel = document.querySelector('.testimonials-carousel');
+const track = document.querySelector('.testimonials-carousel__container');
 const slides = document.querySelectorAll('.testimonials-carousel-slide');
+const dots = document.querySelectorAll('.carousel__indicator');
+const prev = document.querySelector('.prev-button');
+const next = document.querySelector('.next-button');
 
-let currentSlideIndex = 0;
+let index = 0;
+let timer;
 
-function updateCarousel() {
-  const offset = -currentSlideIndex * (slides[0].offsetWidth + 20); // 20 - це відступ між слайдами
-  slidesContainer.style.transform = `translateX(${offset}px)`;
+const gap = parseFloat(getComputedStyle(track).gap) || 0;
 
-  indicators.forEach((indicator, index) => {
-    if (index === currentSlideIndex) {
-      indicator.classList.add('carousel__indicator--active');
-    } else {
-      indicator.classList.remove('carousel__indicator--active');
-    }
+const step = () => slides[0].offsetWidth + gap;
+const visible = () => Math.max(1, Math.round(carousel.clientWidth / step()));
+const maxIndex = () => Math.max(0, slides.length - visible());
+
+function render() {
+  if (index > maxIndex()) index = 0;
+  track.style.transform = `translateX(${-index * step()}px)`;
+
+  dots.forEach((d, i) => {
+    d.style.display = i <= maxIndex() ? 'inline-block' : 'none';
+    d.classList.toggle('carousel__indicator--active', i === index);
   });
 }
 
-function goToSlide(index) {
-  if (index >= 0 && index < slides.length) {
-    currentSlideIndex = index;
-    updateCarousel();
-  }
+function nextSlide() {
+  index = index < maxIndex() ? index + 1 : 0;
+  render();
 }
 
-prevButton.addEventListener('click', () => {
-  if (currentSlideIndex > 0) {
-    currentSlideIndex--;
-  } else {
-    currentSlideIndex = slides.length - 1;
-  }
-  updateCarousel();
-});
+function start() {
+  stop();
+  timer = setInterval(nextSlide, 3000);
+}
 
-nextButton.addEventListener('click', () => {
-  if (currentSlideIndex < slides.length - 1) {
-    currentSlideIndex++;
-  } else {
-    currentSlideIndex = 0;
-  }
-  updateCarousel();
-});
+function stop() {
+  clearInterval(timer);
+}
 
-indicators.forEach((indicator, index) => {
-  indicator.addEventListener('click', () => {
-    goToSlide(index);
-  });
-});
+/* events */
+next.onclick = () => { nextSlide(); start(); };
+prev.onclick = () => { index = index > 0 ? index - 1 : maxIndex(); render(); start(); };
+dots.forEach((d, i) => d.onclick = () => { index = i; render(); start(); });
 
-updateCarousel();
+carousel.onmouseenter = stop;
+carousel.onmouseleave = start;
+window.onresize = render;
+
+/* init */
+render();
+start();
